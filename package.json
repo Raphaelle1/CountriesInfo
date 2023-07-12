@@ -1,4 +1,5 @@
 { "homepage": "https://Raphaelle1.github.io/countries",
+"proxy": "http://localhost:3000",
   "name": "countries",
   "version": "0.1.0",
   "private": true,
