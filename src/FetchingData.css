@@ -1,0 +1,28 @@
+.fetching-data-container {
+  position: inherit;
+}
+
+.globe-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../src/globe.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.bg-details {
+  background-color: lightgray;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 400px) {
+  input,
+  .list-countries {
+    width: 50% !important;
+  }
+}
