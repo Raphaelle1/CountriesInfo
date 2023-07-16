@@ -21,7 +21,6 @@
   height: 100%;
 }
 @media screen and (max-width: 400px) {
-  input,
   .list-countries {
     width: 50% !important;
   }

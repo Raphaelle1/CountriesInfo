@@ -80,7 +80,7 @@ function CountryDetails() {
           <MDBCardText>
             Size of population: <span class="fw-medium">{population}</span>
           </MDBCardText>
-          <button type="button" class="btn btn-light mb-2">
+          <button type="button" class="btn btn-light mb-3 ">
             <a
               href={maps.googleMaps}
               target="_blank"
@@ -93,7 +93,7 @@ function CountryDetails() {
 
           <button
             type="button"
-            class="btn btn-secondary"
+            class="btn btn-secondary mb-5"
             onClick={handleGoBack}
           >
             Return

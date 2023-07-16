@@ -1,25 +1,38 @@
-import React from "react";
-import { MDBListGroup, MDBListGroupItem, MDBRipple } from "mdb-react-ui-kit";
+import React, { useState } from "react";
+import Dropdown from "react-bootstrap/Dropdown";
+import FormControl from "react-bootstrap/FormControl";
 
 const CountryList = ({ countries, handleClick }) => {
+  const [searchText, setSearchText] = useState("");
+
+  const filteredCountries = countries.filter((item) =>
+    item.name.common.toLowerCase().startsWith(searchText.toLowerCase())
+  );
+
   return (
-    <MDBListGroup style={{ width: "18%", margin: "0 auto" }} className="list-countries">
-      {countries.map((item) => (
-        <MDBRipple key={item.name.common}>
-          <MDBListGroupItem
-            tag="a"
-            href="#"
-            action
-            noBorders
+    <Dropdown className="d-flex justify-content-center">
+      <Dropdown.Toggle variant="secondary" id="country-dropdown">
+        Select a Country
+      </Dropdown.Toggle>
+
+      <Dropdown.Menu style={{ width: "13%", backgroundColor: "lightgray" }}>
+        <FormControl
+          type="text"
+          placeholder="Search country..."
+          className="mb-2"
+          value={searchText}
+          onChange={(e) => setSearchText(e.target.value)}
+        />
+        {filteredCountries.map((item) => (
+          <Dropdown.Item
+            key={item.name.common}
             onClick={() => handleClick(item)}
-            className="list-group-item list-group-item-secondary mb-2 d-flex justify-content-center fw-normal"
-            style={{ borderRadius: "5px" }}
           >
             {item.name.common}
-          </MDBListGroupItem>
-        </MDBRipple>
-      ))}
-    </MDBListGroup>
+          </Dropdown.Item>
+        ))}
+      </Dropdown.Menu>
+    </Dropdown>
   );
 };
 
