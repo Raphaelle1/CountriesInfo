@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./FetchingData.css";
+import "./App.css";
 import Welcoming from "./Welcoming";
 import CountryList from "./CountryList";
 

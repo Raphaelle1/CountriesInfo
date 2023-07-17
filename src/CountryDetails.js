@@ -8,7 +8,7 @@ import {
   MDBCardTitle,
   MDBCardText,
 } from "mdb-react-ui-kit";
-import "./FetchingData.css";
+import "./App";
 
 function CountryDetails() {
   const [countryDetails, setCountryDetails] = useState(null);

@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <footer style={{
       textAlign: "start",
-      background: "#545547",
+      background: "#5C636A",
       position: "fixed",
       bottom: "0",
       left: "0",
