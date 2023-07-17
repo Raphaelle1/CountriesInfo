@@ -15,10 +15,6 @@ const CountryList = ({ countries, handleClick }) => {
         Select a Country
       </Dropdown.Toggle>
 
-      <Dropdown.Menu
-        style={{ width: "fit-content", backgroundColor: "lightgray" }}
-        className="dropdown-menu" 
-      >
       <Dropdown.Menu style={{ width: "fit-content", backgroundColor: "lightgray" }}>
         <FormControl
           type="text"

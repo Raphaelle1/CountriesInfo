@@ -14,7 +14,7 @@ function App() {
           <Route path="/" element={<FetchingData />} />
           <Route path="/country/:countryName" element={<CountryDetails />} />
         </Routes> 
-        
+        <Footer/>
       </div>
     </Router>
   );

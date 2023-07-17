@@ -10,6 +10,7 @@
   }
 .fetching-data-container {
   position: inherit;
+  width: 100%;
 }
 
 .globe-background {
@@ -30,12 +31,4 @@
   width: 100%;
   height: 100%;
 }
-@media screen and (max-width: 400px) {
-  .list-countries {
-    width: 50% !important;
-  }
-}
-.dropdown-menu {
-  max-height: 400px;
-  overflow-y: auto; 
-}
+
