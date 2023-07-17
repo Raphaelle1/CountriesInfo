@@ -15,7 +15,7 @@ const CountryList = ({ countries, handleClick }) => {
         Select a Country
       </Dropdown.Toggle>
 
-      <Dropdown.Menu style={{ width: "13%", backgroundColor: "lightgray" }}>
+      <Dropdown.Menu style={{ width: "fit-content", backgroundColor: "lightgray" }}>
         <FormControl
           type="text"
           placeholder="Search country..."
@@ -27,6 +27,7 @@ const CountryList = ({ countries, handleClick }) => {
           <Dropdown.Item
             key={item.name.common}
             onClick={() => handleClick(item)}
+            alt={"Check why it worths to visit "+ item.name.common}
           >
             {item.name.common}
           </Dropdown.Item>

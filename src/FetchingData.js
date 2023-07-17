@@ -34,7 +34,9 @@ const FetchingData = () => {
     <div className="fetching-data-container">
       <div className="globe-background"></div>
       <Welcoming />
-      <CountryList countries={sortedList} handleClick={handleClick} />
+      <div id="content">
+        <CountryList countries={sortedList} handleClick={handleClick} />
+      </div>
     </div>
   );
 };

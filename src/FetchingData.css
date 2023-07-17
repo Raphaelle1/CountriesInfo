@@ -1,5 +1,7 @@
 .fetching-data-container {
-  position: inherit;
+  position: absolute;
+  height:95%;
+  width: 100%;
 }
 
 .globe-background {
