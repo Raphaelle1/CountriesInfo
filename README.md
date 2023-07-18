@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Countries Info Explorer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project has as a main goal to provide basic information of a selected country.
 
-## Available Scripts
+## A simple observation
 
-In the project directory, you can run:
+When planning vacations, a business trip, a move abroad, especially in a country we don't know about, we need to access its basic information (region, local language, capital, currency) in order to plan flights and travel.
 
-### `npm start`
+### `A clean a responsive UI`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Thanks to a UI/UX orientation, and a good creativity sense, I used Javascript, Css, and React component in order to render a beautiful one-page HTML application to make the job done.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### `Using Api as data provider`
 
-### `npm test`
+This front end application uses an open API to retrieve its data. It insures an always "up to date" information since it is maintained by an active community of users/administrators.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The Swagger API documentation makes it usable, maintainable, and evolutive.
 
-### `npm run build`
+See the API documentation about [REST Countries](https://restcountries.com/) for more information.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## `A vision of possible evolutions`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Note: There are ways the project can evolve. None of these options has been choosed yet**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Monetize the application by working on SEO and advertising on the UI
 
-### `npm run eject`
+This is the quickest way to monetize the project, but it will seriously impact the UI/UX
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Add functionnalities
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Use more APIs to make the application more capable (Hotel booking, Flights search, vehicule rental...)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Catch the data of visitor in a local storage solution
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Use the data of user, store it in a database, in order to sort/manipulate it, and monetize it.
