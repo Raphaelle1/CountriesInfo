@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
-// import countapi from 'countapi-js';
+import countapi from 'countapi-js';
 
 const Footer = () => {
   const visits = 1;
+  countapi.visits().then((result) => {
+    visits = result.value;
+});
 
   return (
     <footer style={{
