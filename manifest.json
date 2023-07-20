@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Countries Info Explorer",
+  "name": "Countries info Explorer web based application. A powerfull travel planner by RM1.",
   "icons": [
     {
       "src": "favicon.ico",
