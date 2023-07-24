@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/countries/static/css/main.371a388c.css",
-    "main.js": "/countries/static/js/main.9790854c.js",
+    "main.js": "/countries/static/js/main.edfa4ad2.js",
     "static/media/globe.jpg": "/countries/static/media/globe.76e6fbeabc3f97c0c7d3.jpg",
     "index.html": "/countries/index.html",
     "main.371a388c.css.map": "/countries/static/css/main.371a388c.css.map",
-    "main.9790854c.js.map": "/countries/static/js/main.9790854c.js.map"
+    "main.edfa4ad2.js.map": "/countries/static/js/main.edfa4ad2.js.map"
   },
   "entrypoints": [
     "static/css/main.371a388c.css",
-    "static/js/main.9790854c.js"
+    "static/js/main.edfa4ad2.js"
   ]
 }
