@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from "react";
-import countapi from 'countapi-js';
+import axios from "axios";
 
 const Footer = () => {
-  const visits = 1;
-  countapi.visits().then((result) => {
-    visits = result.value;
-});
+  const [visits, setVisits] = useState(1);
+
+  useEffect(() => {
+    axios
+      .get("https://www.2e2.fr/countries/be/count_api.php")
+      .then((res) => {setVisits(res.data.Visites);})
+      .catch((error) => console.log(error));
+  }, []);
 
   return (
     <footer style={{
